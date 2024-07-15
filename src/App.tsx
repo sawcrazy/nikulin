@@ -1,3 +1,4 @@
+import Logo from '/vite.svg';
 import './App.css'
 export const App = ()=> {
 
@@ -5,8 +6,9 @@ export const App = ()=> {
   return (
     <>
         <div className="container">
-            <header>
+            <header className="header">
                 <div className="logo">
+                    <img src={Logo} alt=""/>
 
                 </div>
                 <nav className="menu">
