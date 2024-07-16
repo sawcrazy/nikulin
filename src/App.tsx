@@ -1,4 +1,5 @@
-import Logo from '/vite.svg';
+import Logo from '/logo.png';
+import Vector from '/vector.svg';
 import './App.css'
 export const App = ()=> {
 
@@ -7,22 +8,20 @@ export const App = ()=> {
     <>
         <div className="container">
             <header className="header">
-                <div className="logo">
-                    <img src={Logo} alt=""/>
-
-                </div>
-                <nav className="menu">
+                <a className="header__logo"><img src={Logo} alt="Logo"/></a>
+                <nav className="header__menu">
                     <ul>
-                        <li>О сервисе</li>
-                        <li>Возможности</li>
-                        <li>Тарифы</li>
-                        <li>О Нас</li>
-                        <li>Приложения</li>
+                        <li><a href="">О сервисе</a></li>
+                        <li><a href="">Возможности</a></li>
+                        <li><a href="">Тарифы</a></li>
+                        <li><a href="">О Нас</a></li>
+                        <li><a href="">Приложения</a></li>
                     </ul>
                 </nav>
-                <div>
-                    <button>
-                        push me
+                <div >
+                    <button className="header__button">
+                        <p>Запустить редактор</p>
+                        <img src={Vector} alt="vector"/>
                     </button>
                 </div>
             </header>
