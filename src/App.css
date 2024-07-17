@@ -1,58 +1,91 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    font-family: Manrope,sans-serif;
 }
 body{
-    font-family: Manrope,sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 21px;
 }
+button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    border-radius: 60px;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+h1{
+    font-family: Fira Sans,sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+}
 a{
     text-decoration: none;
     color: rgba(22, 22, 22, 1);
-
 }
 .container{
     margin: auto;
-    max-width: 1440px;
+    max-width: 1158px;
 }
+.header__logo {
+    width:145px;
+    height: 25px;
+}
+
 .header{
-    padding-top: 30px;
+    padding: 30px 60px 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    height: 52px;
+    height: 82px;
 }
-.header__logo{
-    padding-left: 60px;
-    padding-top: 12px;
-}
+
 .header__menu{
+    align-items: center;
     border-radius: 15px;
     background: rgba(243, 244, 255, 1);
-    padding: 14px 25px 12px 25px;
+    padding: 12px 25px 12px 25px;
+    font-weight: 500;
+}
+.header__menu ul {
+    display: flex;
+    gap: 30px;
 }
 .header__menu li{
-    display: inline;
+    list-style-type: none;
+}
 
-}
-.header__menu li:nth-child(n+2):nth-child(-n+5){
-    padding-left: 30px;
-}
 .header__button{
-    display: flex;
-    justify-content: space-around;
     color: white;
-    width: 235px;
-    height: 48px;
     border: 1px solid rgba(0, 10, 255, 1);
-    border-radius: 60px;
     background: rgba(0, 10, 255, 1);
 }
-.header__button p{
-    padding-top: 15px;
+.possibilities{
+    padding-top: 108px;
+    text-align: center;
 }
-.header__button img{
-    padding-top: 14px;
+.possibilities__text{
+    margin: auto;
+    max-width: 800px;
+}
+.possibilities__text p{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+    max-width: 620px;
+}
+.possibilities__button{
+    margin: auto;
+    color: white;
+    border: 1px solid rgba(0, 10, 255, 1);
+    background: rgba(0, 10, 255, 1);
+}
+.possibilities__img{
+    padding-top: 45px;
 }
