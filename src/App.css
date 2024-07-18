@@ -3,30 +3,27 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Manrope,sans-serif;
+
 }
 body{
     font-size: 15px;
     font-weight: 400;
     line-height: 21px;
+    color: rgba(22, 22, 22, 1);
 }
-button{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 25px;
-    border-radius: 60px;
-    font-weight: 600;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 15px;
-    line-height: 28px;
 
-}
 h1{
     font-family: Fira Sans,sans-serif;
     font-size: 50px;
     font-weight: 500;
     line-height: 50px;
+    color: rgba(22, 22, 22, 1);
+}
+h2{
+    font-family: Fira Sans,sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
 }
 a{
     text-decoration: none;
@@ -57,7 +54,6 @@ a{
     font-weight: 500;
     font-size: 15px;
     line-height: 28px;
-
 }
 .header__menu ul {
     display: flex;
@@ -67,32 +63,75 @@ a{
     list-style-type: none;
 }
 
-.header__button{
-    color: white;
-    border: 1px solid rgba(0, 10, 255, 1);
-    background: rgba(0, 10, 255, 1);
-    line-height: 28px;
-}
 .possibilities{
     padding-top: 108px;
     text-align: center;
+
+}
+.possibilities__title{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    max-width: 800px;
 }
 .possibilities__text{
     margin: auto;
-    max-width: 800px;
+
+
 }
 .possibilities__text p{
     padding-top: 25px;
     padding-bottom: 25px;
-    margin: auto;
-    max-width: 620px;
 }
 .possibilities__button{
-    margin: auto;
-    color: white;
-    border: 1px solid rgba(0, 10, 255, 1);
-    background: rgba(0, 10, 255, 1);
+    display: flex;
+    justify-content: center;
+
 }
 .possibilities__img{
     padding-top: 45px;
+}
+.girl{
+    padding-top: 144px;
+
+}
+.girl__title{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    width: 684px;
+}
+.girl__cart_1{
+    display: flex;
+    margin-top: 40px;
+    height: 460px;
+    background: rgba(243, 244, 255, 1);
+    border: 1px solid rgba(210, 212, 252, 1);
+    border-radius: 20px;
+}
+.girl__cart_2{
+    display: flex;
+    margin-top: 20px;
+    height: 460px;
+    background: rgba(243, 244, 255, 1);
+    border: 1px solid rgba(210, 212, 252, 1);
+    border-radius: 20px;
+}
+.for_whom{
+    padding-top: 149px;
+}
+.for_whom__title{
+    text-align: center;
+
+}
+.for_whom__cart{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
