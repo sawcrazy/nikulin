@@ -12,7 +12,7 @@ export const App = ()=> {
                         <li><a href="">О сервисе</a></li>
                         <li><a href="">Возможности</a></li>
                         <li><a href="">Тарифы</a></li>
-                        <li><a href="">О Нас</a></li>
+                        <li><a href="">О нас</a></li>
                         <li><a href="">Приложения</a></li>
                     </ul>
                 </nav>
