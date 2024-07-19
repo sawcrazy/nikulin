@@ -2,11 +2,13 @@ import Logo from './img/logo.svg';
 import Video from './img/video.png';
 import Girl_1 from './img/girl_1.png';
 import Girl_2 from './img/girl_2.png';
+import Footer from './img/footer.png';
 import './App.css'
 import {ButtonBlue} from './сomponents/buttons/button_blue';
 import {ButtonWhite} from "./сomponents/buttons/button_white";
 import {Cart} from "./сomponents/carts/cart";
-import {arrCart} from "./const";
+import {arrCart, arrCartPrice} from "./const";
+import {CartPrice} from "./сomponents/carts/cart_price";
 export const App = ()=> {
 
    const renderCarts = () =>{
@@ -16,6 +18,15 @@ export const App = ()=> {
             )
         });
     };
+   const renderCartsPrice = () =>{
+       return arrCartPrice.map((item) =>{
+           return (
+               <div>
+                   <CartPrice name={item.name} info={item.info} price={item.prise}/>
+               </div>
+           )
+       })
+   }
   return (
     <>
             <header className="header">
@@ -142,7 +153,58 @@ export const App = ()=> {
                     {renderCarts()}
                 </div>
             </section>
+            <section className="price">
+                <div className="price__title">
+                    <h2>
+                        Тарифы
+                    </h2>
+
+                </div>
+                <div>
+                    {renderCartsPrice()}
+                </div>
+
+            </section>
+            <section className="show">
+                <div className="show__title">
+                    <h2>
+                        Хотите увидеть примеры нашей дополненной реальности?
+                    </h2>
+                </div>
+                <div>
+                    <ButtonBlue name="Связаться с нами"/>
+                </div>
+            </section>
         </div>
+        <footer className="footer">
+            <div className="footer__stripes">
+                <img src={Footer} alt="footer"/>
+            </div>
+            <div className="header">
+                <a className="header__logo">
+                    <img src={Logo} alt="Logo"/>
+                </a>
+                <nav className="header__menu">
+                    <ul>
+                        <li><a href="">О сервисе</a></li>
+                        <li><a href="">Возможности</a></li>
+                        <li><a href="">Тарифы</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Приложения</a></li>
+                    </ul>
+                </nav>
+                <div >
+                    <ButtonBlue name="Запустить редактор"/>
+                </div>
+            </div>
+            <div className="footer__end">
+                <ul>
+                    <li>Персональные данные</li>
+                    <li>Политика сайта</li>
+                    <li>Куки</li>
+                </ul>
+            </div>
+        </footer>
     </>
   )
 }
