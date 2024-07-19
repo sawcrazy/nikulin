@@ -1,4 +1,5 @@
 import Logo from './img/logo.svg';
+import LogoWhite from './img/logo_white.svg'
 import Video from './img/video.png';
 import Girl_1 from './img/girl_1.png';
 import Girl_2 from './img/girl_2.png';
@@ -9,6 +10,7 @@ import {ButtonWhite} from "./сomponents/buttons/button_white";
 import {Cart} from "./сomponents/carts/cart";
 import {arrCart, arrCartPrice} from "./const";
 import {CartPrice} from "./сomponents/carts/cart_price";
+
 export const App = ()=> {
 
    const renderCarts = () =>{
@@ -180,11 +182,11 @@ export const App = ()=> {
             <div className="footer__stripes">
                 <img src={Footer} alt="footer"/>
             </div>
-            <div className="header">
+            <div className="footer__content">
                 <a className="header__logo">
-                    <img src={Logo} alt="Logo"/>
+                    <img src={LogoWhite} alt="Logo"/>
                 </a>
-                <nav className="header__menu">
+                <nav className="footer__menu">
                     <ul>
                         <li><a href="">О сервисе</a></li>
                         <li><a href="">Возможности</a></li>

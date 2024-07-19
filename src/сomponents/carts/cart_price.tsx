@@ -1,7 +1,16 @@
-import {ButtonWhite} from "../buttons/button_white";
+
 import {ButtonBlue} from "../buttons/button_blue";
 
 export const CartPrice = (props) =>{
+    const renderList = () =>{
+        return props.info.map((item) =>{
+            return (
+                <li>
+                    {item}
+                </li>
+            )
+        })
+    }
     return(
         <>
             <div className="cart_price">
@@ -9,7 +18,9 @@ export const CartPrice = (props) =>{
                     <h4>{props.name}</h4>
                 </div>
                 <div className="cart_price__info">
-                    {props.info}
+                    <ul>
+                        {renderList()}
+                    </ul>
                 </div>
                 <div className="cart_price__price">
                     {props.price}
