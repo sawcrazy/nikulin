@@ -186,11 +186,32 @@ li{
 .price__title{
     text-align: center;
 }
+.price__content{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+
+}
 .show{
-    padding-top: 150px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 132px;
     height: 432px;
     text-align: center;
     align-items: center;
+    background:
+            url("./img/stars_1.png") no-repeat 88% 14%,
+            url("./img/stars_2.png") no-repeat 12.5% 84%,
+            url("./img/background.png");
+
+    border: 1px solid rgba(210, 211, 252, 1);
+    border-radius: 20px;
+}
+.show__title{
+    width: 700px;
 }
 .footer{
     padding-top: 150px;

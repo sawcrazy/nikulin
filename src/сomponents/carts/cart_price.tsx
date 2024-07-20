@@ -1,5 +1,5 @@
-
 import {ButtonBlue} from "../buttons/button_blue";
+import s from './style.module.css';
 
 export const CartPrice = (props) =>{
     const renderList = () =>{
@@ -12,23 +12,21 @@ export const CartPrice = (props) =>{
         })
     }
     return(
-        <>
-            <div className="cart_price">
+            <div className={s.cart_price}>
                 <div className="cart_price__name">
                     <h4>{props.name}</h4>
                 </div>
-                <div className="cart_price__info">
+                <div className={s.cart_price__info}>
                     <ul>
                         {renderList()}
                     </ul>
                 </div>
-                <div className="cart_price__price">
-                    {props.price}
+                <div className={s.cart_price__price}>
+                    <h2>{props.price}</h2>
                 </div>
                 <div className="cart_price__button">
                     <ButtonBlue name="Купить тариф"/>
                 </div>
             </div>
-        </>
     )
 }

@@ -149,9 +149,8 @@ export const App = ()=> {
                     <h2>
                         Тарифы
                     </h2>
-
                 </div>
-                <div>
+                <div className="price__content">
                     {renderCartsPrice()}
                 </div>
 
