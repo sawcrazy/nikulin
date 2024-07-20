@@ -1,0 +1,16 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart__img{
+    width: 372px;
+    height: 372px;
+    border-radius: 20px;
+}
+.cart__name{
+
+}
+.cart__button{
+
+}

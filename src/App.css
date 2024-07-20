@@ -35,6 +35,14 @@ h3{
 
 
 }
+h4{
+    font-family: Fira Sans,sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(22, 22, 22, 1);
+
+}
 a{
     text-decoration: none;
     color: rgba(22, 22, 22, 1);
@@ -169,7 +177,8 @@ li{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 35px;
 }
 .price{
     padding-top: 150px;
