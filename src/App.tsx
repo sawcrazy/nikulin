@@ -9,8 +9,18 @@ import {ButtonWhite} from "./сomponents/buttons/button_white";
 import {Cart} from "./сomponents/carts/cart";
 import {arrCart, arrCartPrice} from "./const";
 import {CartPrice} from "./сomponents/carts/cart_price";
+import {Modal} from "./сomponents/modal/modal";
+import {useState} from "react";
 
 export const App = ()=> {
+   const [open, setOpen] = useState(false);
+
+    const openModal = () =>{
+        setOpen(true);
+    }
+    const closeModal = () =>{
+        setOpen(false);
+    }
 
    const renderCarts = () =>{
         return arrCart.map((item) => {
@@ -42,7 +52,11 @@ export const App = ()=> {
                     </ul>
                 </nav>
                 <div >
-                    <ButtonBlue name="Запустить редактор"/>
+                    <button onClick={openModal}>
+                        test
+
+                    </button>
+                    <ButtonBlue name="Запустить редактор" onClick={openModal}/>
                 </div>
             </header>
         <div className="container">
@@ -206,6 +220,7 @@ export const App = ()=> {
                 </ul>
             </div>
         </footer>
+        <Modal open={open} onClick={closeModal}/>
     </>
   )
 }
