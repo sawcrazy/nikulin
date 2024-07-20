@@ -1,6 +1,8 @@
 import Logo from './img/logo.svg';
 import LogoWhite from './img/logo_white.svg'
 import Footer from './img/footer.png';
+import Email from  './img/email.svg';
+import Phone from './img/phone.svg';
 import './App.css'
 import {ButtonBlue} from './сomponents/buttons/button_blue';
 import {ButtonWhite} from "./сomponents/buttons/button_white";
@@ -183,15 +185,24 @@ export const App = ()=> {
                         <li><a href="">Приложения</a></li>
                     </ul>
                 </nav>
-                <div >
-                    <ButtonBlue name="Запустить редактор"/>
+                <div>
+                    <div>
+                        <img src={Email} alt="email"/>
+                        <a href="mailto:@test.roketar.com">@test.roketar.com</a>
+
+                    </div>
+                    <div>
+                        <img src={Phone} alt="phone"/>
+                        <a href="tel:++79999999999">+7 (999) 999-99-99</a>
+
+                    </div>
                 </div>
             </div>
             <div className="footer__end">
                 <ul>
-                    <li>Персональные данные</li>
-                    <li>Политика сайта</li>
-                    <li>Куки</li>
+                    <li><a href="">Персональные данные</a></li>
+                    <li><a href="">Политика сайта</a></li>
+                    <li><a href="">Куки</a></li>
                 </ul>
             </div>
         </footer>
