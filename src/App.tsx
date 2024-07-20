@@ -51,11 +51,7 @@ export const App = ()=> {
                         <li><a href="">Приложения</a></li>
                     </ul>
                 </nav>
-                <div >
-                    <button onClick={openModal}>
-                        test
-
-                    </button>
+                <div>
                     <ButtonBlue name="Запустить редактор" onClick={openModal}/>
                 </div>
             </header>
