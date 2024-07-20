@@ -24,6 +24,16 @@ h2{
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
+    color: rgba(22, 22, 22, 1);
+}
+h3{
+    font-family: Fira Sans,sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 35px;
+    color: rgba(22, 22, 22, 1);
+
+
 }
 a{
     text-decoration: none;
@@ -91,12 +101,16 @@ li{
     justify-content: center;
 
 }
-.possibilities__img{
-    padding-top: 45px;
+.possibilities__contend{
+    margin-top: 45px;
+    background: url("./img/video.png") center  no-repeat ;
+    background-size: cover;
+    width: 1158px;
+    height: 560px;
+    border-radius: 20px;
 }
 .girl{
-    padding-top: 144px;
-
+    padding-top: 150px;
 }
 .girl__title{
     text-align: center;
@@ -104,24 +118,45 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     width: 684px;
 }
 .girl__cart_1{
     display: flex;
+    align-items: center;
     margin-top: 40px;
     height: 460px;
-    background: rgba(243, 244, 255, 1);
+    background: url("./img/girl_1.png") rgba(243, 244, 255, 1) no-repeat right top 2px;
     border: 1px solid rgba(210, 212, 252, 1);
     border-radius: 20px;
 }
+.girl__cart_1__content{
+    padding-left: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 450px;
+}
+
 .girl__cart_2{
     display: flex;
+    align-items: center;
+    justify-content:flex-end;
     margin-top: 20px;
     height: 460px;
-    background: rgba(243, 244, 255, 1);
+    background: url("./img/girl_2.png") rgba(243, 244, 255, 1) no-repeat left top 2px;
     border: 1px solid rgba(210, 212, 252, 1);
     border-radius: 20px;
+}
+.girl__cart_2__content{
+    padding-right: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 420px;
+
 }
 .for_whom{
     padding-top: 149px;

@@ -1,8 +1,5 @@
 import Logo from './img/logo.svg';
 import LogoWhite from './img/logo_white.svg'
-import Video from './img/video.png';
-import Girl_1 from './img/girl_1.png';
-import Girl_2 from './img/girl_2.png';
 import Footer from './img/footer.png';
 import './App.css'
 import {ButtonBlue} from './сomponents/buttons/button_blue';
@@ -37,7 +34,7 @@ export const App = ()=> {
                     <ul>
                         <li><a href="">О сервисе</a></li>
                         <li><a href="">Возможности</a></li>
-                        <li><a href="">Тарифы</a></li>
+                        <li><a href="#price">Тарифы</a></li>
                         <li><a href="">О нас</a></li>
                         <li><a href="">Приложения</a></li>
                     </ul>
@@ -68,7 +65,6 @@ export const App = ()=> {
                     </div>
                 </div>
                 <div className="possibilities__contend">
-                    <img src={Video} alt="Video" className="possibilities__img"/>
                 </div>
 
             </section>
@@ -92,12 +88,11 @@ export const App = ()=> {
                 </div>
                 <div className="girl__cart">
                     <div className="girl__cart_1">
-                        <div className="girl__cart_1__text">
+                        <div className="girl__cart_1__content">
                             <div>
                                 <h3>
                                     Разработка проектов под ключ
                                 </h3>
-
                             </div>
                             <div>
                                 Разработка дополненной реальности для ваших
@@ -114,15 +109,9 @@ export const App = ()=> {
                                 <ButtonWhite name="Узнать больше"/>
                             </div>
                         </div>
-                        <div className="girl__cart_1_img">
-                            <img src={Girl_1} alt=""/>
-                        </div>
                     </div>
                     <div className="girl__cart_2">
-                        <div className="girl__cart_1_img">
-                            <img src={Girl_2} alt=""/>
-                        </div>
-                        <div className="girl__cart_2__text">
+                        <div className="girl__cart_2__content">
                             <div>
                                 <h3>
                                     Разработка проектов под ключ
@@ -155,7 +144,7 @@ export const App = ()=> {
                     {renderCarts()}
                 </div>
             </section>
-            <section className="price">
+            <section className="price" id="price">
                 <div className="price__title">
                     <h2>
                         Тарифы
