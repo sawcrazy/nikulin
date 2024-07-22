@@ -1,6 +1,7 @@
 import s from './style.module.css';
 import {Input} from "../inputs/input";
 import {ButtonBlue} from "../buttons/button_blue";
+import {InputCheckbox} from "../inputs/input_checkbox";
 
 export const Modal = (props) =>{
     if(!props.open){
@@ -20,11 +21,7 @@ export const Modal = (props) =>{
                     <form action="" className={s.modal__form}>
                         <Input type="email" placeholder="Email" style="input"/>
                         <Input type="password" placeholder="Пароль" style="input"/>
-                        <div>
-                            <Input type="checkbox" id="scales" />
-                            <label htmlFor="scales">Я согласен с условиями <a href="">обработки <br/>персональных данных</a></label>
-                        </div>
-
+                        <InputCheckbox/>
                         <ButtonBlue name="Войти в аккаунт"/>
                     </form>
                 </div>

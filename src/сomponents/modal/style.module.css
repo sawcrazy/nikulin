@@ -29,6 +29,13 @@
 .modal__content{
 
 }
+.checkbox{
+    display: flex;
+}
+.check__box{
+    width: 21px;
+    height: 21px;
+}
 .modal__form{
     display: flex;
     flex-direction: column;

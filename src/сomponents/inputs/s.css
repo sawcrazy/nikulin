@@ -11,3 +11,17 @@
     color: rgba(173, 173, 173, 1)
 
 }
+input[type="checkbox"] {
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+}
+span {
+    font-family: Manrope,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    text-align: left;
+
+
+}
