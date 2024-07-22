@@ -195,13 +195,16 @@ export const App = ()=> {
                         <li><a href="">Приложения</a></li>
                     </ul>
                 </nav>
-                <div>
-                    <div>
-                        <img src={Email} alt="email"/>
-                        <a href="mailto:@test.roketar.com">@test.roketar.com</a>
-
+                <div className="footer__info">
+                    <div className="footer__info_email">
+                        <div>
+                            <img src={Email} alt="email"/>
+                        </div>
+                        <div>
+                            <a href="mailto:@test.roketar.com">@test.roketar.com</a>
+                        </div>
                     </div>
-                    <div>
+                    <div className="footer__info_phone">
                         <img src={Phone} alt="phone"/>
                         <a href="tel:++79999999999">+7 (999) 999-99-99</a>
 

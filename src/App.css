@@ -262,3 +262,19 @@ li{
 .footer__end a{
     color: rgba(255, 255, 255, 1);
 }
+.footer__info_email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer__info_phone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer__info{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
