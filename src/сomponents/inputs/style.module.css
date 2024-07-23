@@ -11,3 +11,12 @@
     color: rgba(173, 173, 173, 1)
 
 }
+input[type="checkbox"] {
+    flex-shrink:0;
+    width: 21px;
+    height: 21px;
+}
+.checkbox{
+    display: flex;
+    gap: 10px;
+}

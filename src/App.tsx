@@ -9,7 +9,7 @@ import {ButtonWhite} from "./сomponents/buttons/button_white";
 import {Cart} from "./сomponents/carts/cart";
 import {arrCart, arrCartPrice} from "./const";
 import {CartPrice} from "./сomponents/carts/cart_price";
-import {Modal} from "./сomponents/modal/modal";
+import {ModalIn} from "./сomponents/modal/modal_in";
 import {useState} from "react";
 
 export const App = ()=> {
@@ -219,7 +219,11 @@ export const App = ()=> {
                 </ul>
             </div>
         </footer>
-        <Modal open={open} onClick={closeModal}/>
+        <ModalIn
+            open={open}
+            onClick={closeModal}
+            title="Войти в аккаунт"
+        />
     </>
   )
 }

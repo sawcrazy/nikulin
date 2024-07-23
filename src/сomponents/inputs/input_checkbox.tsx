@@ -1,9 +1,9 @@
-import './s.css'
+import s from "./style.module.css"
 export const InputCheckbox = () =>{
   return (
-    <label>
-      <input className="checkbox" type="checkbox"/>
-      <span>Я согласен с условиями обработки персональных данных</span>
-    </label>
+      <div className={s.checkbox}>
+          <input type="checkbox"/>
+          <div>Я согласен с условиями <a href="">обработки персональных данных</a></div>
+      </div>
   )
 }
