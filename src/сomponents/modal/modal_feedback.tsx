@@ -1,9 +1,15 @@
 import {Modal} from "./modal";
+import {Input} from "../inputs/input";
+import {ButtonBlue} from "../buttons/button_blue";
+import {InputCheckbox} from "../inputs/input_checkbox";
 
-export const ModalFeedback = () =>{
+export const ModalFeedback = (props) =>{
     return(
-        <Modal>
-
-        </Modal>
+      <Modal title={props.title} open={props.open} onClick={props.onClick}>
+          <Input type="text" placeholder="Имя" style="input"/>
+          <Input type="tel" placeholder="Телефон" style="input"/>
+          <InputCheckbox/>
+          <ButtonBlue name="Создать аккаунт"/>
+      </Modal>
     )
 }

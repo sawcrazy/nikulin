@@ -11,18 +11,35 @@ import {arrCart, arrCartPrice} from "./const";
 import {CartPrice} from "./сomponents/carts/cart_price";
 import {ModalIn} from "./сomponents/modal/modal_in";
 import {useState} from "react";
+import {ModalCreate} from "./сomponents/modal/modal_create";
+import {ModalFeedback} from "./сomponents/modal/modal_feedback";
 
 export const App = ()=> {
-   const [open, setOpen] = useState(false);
+   const [openIn, setOpenIn] = useState(false);
+   const [openCreate, setOpenCreate] = useState(false);
+   const [openFeedback, setOpenFeedback] = useState(false);
 
-    const openModal = () =>{
-        setOpen(true);
+    const openModalIn = () =>{
+        setOpenIn(true);
     }
-    const closeModal = () =>{
-        setOpen(false);
+    const closeModalIn = () =>{
+        setOpenIn(false);
+    }
+    const openModalCreate = () =>{
+        setOpenCreate(true);
+    }
+    const closeModalCreate = () =>{
+        setOpenCreate(false);
+    }
+    const openModalFeedback = () =>{
+        setOpenFeedback(true);
+    }
+    const closeModalFeedback = () =>{
+        setOpenFeedback(false);
     }
 
-   const renderCarts = () =>{
+
+    const renderCarts = () =>{
         return arrCart.map((item) => {
             return (
                 <Cart name={item.name} img={item.img}/>
@@ -52,7 +69,7 @@ export const App = ()=> {
                     </ul>
                 </nav>
                 <div>
-                    <ButtonBlue name="Запустить редактор" onClick={openModal}/>
+                    <ButtonBlue name="Запустить редактор" onClick={openModalIn}/>
                 </div>
             </header>
         <div className="container">
@@ -72,7 +89,7 @@ export const App = ()=> {
                     </div>
                     <div>
                         <div>
-                            <ButtonBlue name="Попробовать бесплатно"/>
+                            <ButtonBlue name="Попробовать бесплатно" onClick={openModalCreate}/>
                         </div>
                     </div>
                 </div>
@@ -95,7 +112,7 @@ export const App = ()=> {
                         или с помощью гарнитуры VR.
                     </div>
                     <div>
-                        <ButtonBlue name="Узнать подробнее"/>
+                        <ButtonBlue name="Узнать подробнее" onClick={openModalFeedback}/>
                     </div>
                 </div>
                 <div className="girl__cart">
@@ -219,10 +236,20 @@ export const App = ()=> {
                 </ul>
             </div>
         </footer>
+        <ModalCreate
+          open={openCreate}
+          onClick={closeModalCreate}
+          title="Создать аккаунт"
+        />
         <ModalIn
-            open={open}
-            onClick={closeModal}
+            open={openIn}
+            onClick={closeModalIn}
             title="Войти в аккаунт"
+        />
+        <ModalFeedback
+              open={openFeedback}
+              onClick={closeModalFeedback}
+              title="Обратная связь"
         />
     </>
   )
