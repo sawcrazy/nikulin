@@ -76,6 +76,10 @@ li{
     font-size: 15px;
     line-height: 28px;
 }
+.header__menu a {
+    text-decoration: none;
+    color: rgba(22, 22, 22, 1);
+}
 .header__menu a:hover{
     border-bottom: 5px dotted rgba(0, 10, 255, 1);;
     border-bottom-width: initial;
