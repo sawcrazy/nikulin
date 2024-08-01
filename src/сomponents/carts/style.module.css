@@ -4,7 +4,7 @@
     gap: 20px;
 }
 .cart__img{
-    width: 372px;
+    max-width: 372px;
     height: 372px;
     border-radius: 20px;
 }
@@ -20,16 +20,13 @@
     flex-direction: column;
     gap: 20px;
     width: 372px;
-    min-height: 405px;
     border-radius: 20px;
     border: 1px solid rgba(210, 212, 252, 1);
     background: rgba(243, 244, 255, 1);
     padding: 30px 35px;
-
-
 }
 .cart_price__info{
-    width: 305px;
+    max-width: 305px;
     font-family: Manrope,sans-serif;
     font-size: 16px;
     font-weight: 400;

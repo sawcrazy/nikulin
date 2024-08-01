@@ -17,7 +17,7 @@ a {
     background: rgba(22, 22, 22, 0.7);
 }
 .modal__widow{
-    width: 393px;
+    max-width: 393px;
     top: 175px;
     left: 524px;
     padding: 30px;
