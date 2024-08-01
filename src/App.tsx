@@ -3,6 +3,7 @@ import LogoWhite from './img/logo_white.svg'
 import Footer from './img/footer.png';
 import Email from  './img/email.svg';
 import Phone from './img/phone.svg';
+import Video from './img/video.png';
 import './App.css'
 import {ButtonBlue} from './сomponents/buttons/button_blue';
 import {ButtonWhite} from "./сomponents/buttons/button_white";
@@ -78,10 +79,9 @@ export const App = ()=> {
                     <div>
                         <h1>Визуализируйте и объясняйте лучше, используя интерактивное 3D и AR</h1>
                     </div>
-                    <div>
+                    <div className="possibilities__title_text">
                         Встречайте Vectary, онлайн-платформу для создания и
                         управления интерактивными
-                        <br/>
                         3D- и AR-проектами,
                         которые вдохновляют, обучают и решают проблемы.
                         <br/>
@@ -93,8 +93,13 @@ export const App = ()=> {
                         </div>
                     </div>
                 </div>
-                <div className="possibilities__contend">
-                </div>
+                <div className="possibilities__contend"  style={
+                    {backgroundImage: `url(${Video})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                        backgroundSize: "cover",
+                    }
+                }></div>
 
             </section>
             <section className="girl">
@@ -102,13 +107,10 @@ export const App = ()=> {
                     <div>
                         <h2>Расширяем возможности малых и крупных команд</h2>
                     </div>
-                    <div>
+                    <div className="girl__title_text">
                         Воспользуйтесь преимуществами наличия инструментов смешанной
-                        <br/>
                         реальности на одной платформе. Импортируйте 3D-файлы или создавайте
-                        <br/>
                         свои собственные модели. Просматривайте их в дополненной реальности
-                        <br/>
                         или с помощью гарнитуры VR.
                     </div>
                     <div>
@@ -123,15 +125,11 @@ export const App = ()=> {
                                     Разработка проектов под ключ
                                 </h3>
                             </div>
-                            <div>
+                            <div className="girl__cart_1__content_text">
                                 Разработка дополненной реальности для ваших
-                                <br/>
                                 продуктов под ключ, что включает в себя: создание
-                                <br/>
                                 объемных моделей, 3D-просмотр для компьютеров,
-                                <br/>
                                 3D и AR просмотр для мобильных устройств в
-                                <br/>
                                 браузере
                             </div>
                             <div>
@@ -147,15 +145,11 @@ export const App = ()=> {
                                 </h3>
 
                             </div>
-                            <div>
+                            <div className="girl__cart_1__content_text">
                                 Разработка дополненной реальности для ваших
-                                <br/>
                                 продуктов под ключ, что включает в себя: создание
-                                <br/>
                                 объемных моделей, 3D-просмотр для компьютеров,
-                                <br/>
                                 3D и AR просмотр для мобильных устройств в
-                                <br/>
                                 браузере
                             </div>
                             <div>

@@ -13,7 +13,7 @@ export const CartPrice = (props) =>{
     }
     return(
             <div className={s.cart_price}>
-                <div className="cart_price__name">
+                <div>
                     <h4>{props.name}</h4>
                 </div>
                 <div className={s.cart_price__info}>
