@@ -93,13 +93,15 @@ export const App = ()=> {
                         </div>
                     </div>
                 </div>
-                <div className="possibilities__contend"  style={
-                    {backgroundImage: `url(${Video})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                    }
-                }></div>
+                <div className="possibilities__contend"
+                     style={
+                                {backgroundImage: `url(${Video})`,
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundPosition: "center",
+                                    backgroundSize: "cover",
+                                }
+                            }
+                ></div>
 
             </section>
             <section className="girl">

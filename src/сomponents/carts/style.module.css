@@ -4,7 +4,7 @@
     gap: 20px;
 }
 .cart__img{
-    max-width: 372px;
+    width: 372px;
     height: 372px;
     border-radius: 20px;
 }

@@ -4,8 +4,17 @@ import s from './style.module.css';
 export const Cart = (props) =>{
     return(
             <div className={s.cart}>
-                <div className={s.cart__img}>
-                    <img src={props.img} alt="img"/>
+                <div
+                    className={s.cart__img}
+                    style={
+                        {backgroundImage: `url(${props.img})`,
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            backgroundSize: "cover",
+                        }
+                    }
+
+                >
                 </div>
                 <div className={s.cart__name}>
                     <h4>{props.name}</h4>
