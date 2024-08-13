@@ -4,6 +4,8 @@ import Footer from './img/footer.png';
 import Email from  './img/email.svg';
 import Phone from './img/phone.svg';
 import Video from './img/video.png';
+import Girl from './img/girl.png';
+import Menu from './img/menu_mobile.svg';
 import './App.css'
 import {ButtonBlue} from './сomponents/buttons/button_blue';
 import {ButtonWhite} from "./сomponents/buttons/button_white";
@@ -73,6 +75,14 @@ export const App = ()=> {
                     <ButtonBlue name="Запустить редактор" onClick={openModalIn}/>
                 </div>
             </header>
+        <div className="header__mobile">
+            <div className="header__mobile__content">
+                <div>
+                    <a className="header__logo"><img src={Logo} alt="Logo"/></a>
+                </div>
+                    <img src={Menu} alt="menu"/>
+            </div>
+        </div>
         <div className="container">
             <section className="possibilities">
                 <div className="possibilities__title">
@@ -120,6 +130,67 @@ export const App = ()=> {
                     </div>
                 </div>
                 <div className="girl__cart">
+                    <div className="girl__cart_test">
+                        <div className="girl__cart_1__content">
+                            <div>
+                                <h3>
+                                    Разработка проектов под ключ
+                                </h3>
+                            </div>
+                            <div className="girl__cart_1__content_text">
+                                Разработка дополненной реальности для ваших
+                                продуктов под ключ, что включает в себя: создание
+                                объемных моделей, 3D-просмотр для компьютеров,
+                                3D и AR просмотр для мобильных устройств в
+                                браузере
+                            </div>
+                            <div>
+                                <ButtonWhite name="Узнать больше"/>
+                            </div>
+                        </div>
+                        <div className="girl_img"
+                             style={
+                                 {backgroundImage: `url(${Girl})`,
+                                     backgroundRepeat: "no-repeat",
+
+                                     backgroundSize: "cover",
+                                 }
+                             }
+                        >
+
+                        </div>
+                    </div>
+                    <div className="girl__cart_test revers">
+                        <div className="girl__cart_1__content">
+                            <div>
+                                <h3>
+                                    Разработка проектов под ключ
+                                </h3>
+                            </div>
+                            <div className="girl__cart_1__content_text">
+                                Разработка дополненной реальности для ваших
+                                продуктов под ключ, что включает в себя: создание
+                                объемных моделей, 3D-просмотр для компьютеров,
+                                3D и AR просмотр для мобильных устройств в
+                                браузере
+                            </div>
+                            <div>
+                                <ButtonWhite name="Узнать больше"/>
+                            </div>
+                        </div>
+                        <div className="girl_img"
+                             style={
+                                 {backgroundImage: `url(${Girl})`,
+                                     backgroundRepeat: "no-repeat",
+
+                                     backgroundSize: "cover",
+                                 }
+                             }
+                        >
+
+                        </div>
+                    </div>
+
                     <div className="girl__cart_1">
                         <div className="girl__cart_1__content">
                             <div>
@@ -196,31 +267,30 @@ export const App = ()=> {
                 <img src={Footer} alt="footer"/>
             </div>
             <div className="footer__content">
-                <a className="header__logo">
-                    <img src={LogoWhite} alt="Logo"/>
-                </a>
-                <nav className="footer__menu">
-                    <ul>
-                        <li><a href="">О сервисе</a></li>
-                        <li><a href="">Возможности</a></li>
-                        <li><a href="">Тарифы</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Приложения</a></li>
-                    </ul>
-                </nav>
-                <div className="footer__info">
-                    <div className="footer__info_email">
-                        <div>
+                <div className="container">
+                    <div className="footer__content_logo">
+                        <a className="header__logo">
+                            <img src={LogoWhite} alt="Logo"/>
+                        </a>
+                    </div>
+                    <nav className="footer__menu">
+                        <ul>
+                            <li><a href="">О сервисе</a></li>
+                            <li><a href="">Возможности</a></li>
+                            <li><a href="">Тарифы</a></li>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Приложения</a></li>
+                        </ul>
+                    </nav>
+                    <div className="footer__info">
+                        <div className="footer__info_email">
                             <img src={Email} alt="email"/>
-                        </div>
-                        <div>
                             <a href="mailto:@test.roketar.com">@test.roketar.com</a>
                         </div>
-                    </div>
-                    <div className="footer__info_phone">
-                        <img src={Phone} alt="phone"/>
-                        <a href="tel:++79999999999">+7 (999) 999-99-99</a>
-
+                        <div className="footer__info_phone">
+                            <img src={Phone} alt="phone"/>
+                            <a href="tel:++79999999999">+7 (999) 999-99-99</a>
+                        </div>
                     </div>
                 </div>
             </div>

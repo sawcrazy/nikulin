@@ -4,7 +4,7 @@ import s from './style.module.css';
 export const ButtonBlue = (props) =>{
     return(
         <>
-            <button className={s.button_blue} onClick={props.onClick}>
+            <button className={s.button_blue + " " + s.mobile} onClick={props.onClick}>
                 <p>{props.name}</p>
                 <Vector/>
             </button>

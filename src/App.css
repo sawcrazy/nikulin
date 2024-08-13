@@ -32,8 +32,6 @@ h3{
     font-weight: 500;
     line-height: 35px;
     color: rgba(22, 22, 22, 1);
-
-
 }
 h4{
     font-family: Fira Sans,sans-serif;
@@ -65,6 +63,22 @@ li{
     align-items: center;
     justify-content: space-between;
     height: 82px;
+}
+.header__mobile{
+    display: none;
+    margin: auto;
+    padding: 20px 10px;
+}
+.header__mobile__content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background: rgba(243, 244, 255, 1);
+    border-radius: 7px;
+    max-width: 100%;
+    height: 45px;
+
 }
 
 .header__menu{
@@ -106,7 +120,6 @@ li{
 .possibilities__text{
     margin: auto;
 
-
 }
 .possibilities__text p{
     padding-top: 25px;
@@ -147,6 +160,23 @@ li{
     text-align: center;
     max-width: 560px;
     color: rgba(22, 22, 22, 1);
+
+}
+.girl__cart_test{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    min-height: 460px;
+    background: url("./img/girl_back.svg") rgba(243, 244, 255, 1) no-repeat right top 2px;
+    border: 1px solid rgba(210, 212, 252, 1);
+    border-radius: 20px;
+}
+.girl_img {
+    height: 426px;
+    width: 420px;
+    margin-left: 190px;
+    margin-top: 32px;
 
 }
 .girl__cart_1{
@@ -256,7 +286,9 @@ li{
 }
 
 .footer__content{
-    padding: 30px 60px 0;
+    background: rgba(0, 10, 255, 1);
+}
+.footer__content .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -309,21 +341,114 @@ li{
     gap: 10px;
 }
 .footer__info{
-    margin-top: 15px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-@media (max-width:1017px) {
-    .header{
-        display: none;
+@media (max-width:1065px) {
+    .girl_img{
+        margin-left: 20px;
     }
 
 }
+@media (max-width: 883px) {
 
-@media (max-width:977px) {
-    .footer__menu{
+}
+
+@media (max-width:772px) {
+    .header{
         display: none;
     }
+    .header__mobile{
+        display: block;
+    }
+
+}
+@media (max-width:422px) {
+    .container{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .header{
+        display: none;
+    }
+    .header__mobile{
+        display: block;
+    }
+    .possibilities{
+        padding-top: 41px;
+    }
+    .possibilities__title{
+        max-width: 300px;
+        gap: 20px;
+    }
+    .possibilities__title_text{
+        font-family: Manrope,sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+        max-width: 276px;
+    }
+
+    .possibilities__title h1{
+        font-family: Manrope,sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: rgba(22, 22, 22, 1);
+    }
+    .girl{
+        padding-top: 80px;
+    }
+    .girl__title h2{
+        font-family: Manrope,sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 31px;
+
+    }
+    .girl__title_text{
+        font-family: Manrope,sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+        max-width: 277px;
+    }
+    .girl__cart_1__content h3{
+        font-family: Fira Sans,sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        width: 261px;
+    }
+    .girl__cart_1__content{
+        padding-left: 0;
+        order: revert;
+    }
+    .girl__cart_test{
+        padding: 20px;
+        background: url("./img/girl_back.svg") rgba(243, 244, 255, 1) no-repeat bottom;
+        gap: 50px;
+    }
+    .girl__cart_1__content_text{
+        font-family: Manrope,sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        width: 261px;
+
+    }
+
+
+}
+.revers{
+    flex-direction: row-reverse;
+    background: url("./img/girl_back.svg") rgba(243, 244, 255, 1) no-repeat left top 2px;
 
 }
