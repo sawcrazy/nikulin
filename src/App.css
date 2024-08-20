@@ -5,6 +5,9 @@
     font-family: Manrope,sans-serif;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-size: 15px;
     font-weight: 400;
@@ -47,6 +50,16 @@ a{
 }
 li{
     list-style-type: none;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    background: rgba(243, 244, 255, 1);
+    border-radius: 50%;
+    margin: auto;
+}
+.dot:hover{
+    background: rgba(0, 10, 255, 1);
 }
 .container{
     margin: auto;
@@ -95,7 +108,7 @@ li{
     color: rgba(22, 22, 22, 1);
 }
 .header__menu a:hover{
-    border-bottom: 5px dotted rgba(0, 10, 255, 1);;
+    border-bottom: 5px dotted rgba(0, 10, 255, 1);
     border-bottom-width: initial;
 }
 .header__menu ul {
@@ -166,6 +179,7 @@ li{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 190px;
     margin-top: 40px;
     min-height: 460px;
     background: url("./img/girl_back.svg") rgba(243, 244, 255, 1) no-repeat right top 2px;
@@ -175,7 +189,6 @@ li{
 .girl_img {
     height: 426px;
     width: 420px;
-    margin-left: 190px;
     margin-top: 32px;
 
 }
@@ -258,8 +271,8 @@ li{
     margin-top: 150px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
-    padding-top: 132px;
     height: 432px;
     text-align: center;
     align-items: center;
@@ -346,24 +359,23 @@ li{
     flex-direction: column;
     gap: 15px;
 }
-@media (max-width:1065px) {
-    .girl_img{
-        margin-left: 20px;
-    }
-
-}
-@media (max-width: 883px) {
-
-}
-
-@media (max-width:772px) {
+@media (max-width: 843px) {
     .header{
         display: none;
     }
     .header__mobile{
         display: block;
     }
+    .footer__content .container{
+        flex-direction: column;
+    }
 
+}
+@media (max-width: 539px) {
+    .footer__menu ul{
+        flex-direction: column;
+        gap:10px;
+    }
 }
 @media (max-width:422px) {
     .container{
@@ -444,11 +456,14 @@ li{
         width: 261px;
 
     }
+    .footer__end ul{
+        flex-direction: column;
+        align-items: center;
+    }
 
 
 }
 .revers{
     flex-direction: row-reverse;
-    background: url("./img/girl_back.svg") rgba(243, 244, 255, 1) no-repeat left top 2px;
-
+    background: url("./img/background_rev.png") rgba(243, 244, 255, 1) no-repeat left top 2px;
 }

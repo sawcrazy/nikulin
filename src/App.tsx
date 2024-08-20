@@ -64,11 +64,11 @@ export const App = ()=> {
                 <a className="header__logo"><img src={Logo} alt="Logo"/></a>
                 <nav className="header__menu">
                     <ul>
-                        <li><a href="">О сервисе</a></li>
-                        <li><a href="">Возможности</a></li>
+                        <li><a href="">О сервисе</a><div className="dot"></div></li>
+                        <li><a href="#girl">Возможности</a></li>
                         <li><a href="#price">Тарифы</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Приложения</a></li>
+                        <li><a href="#for_whom">О нас</a></li>
+                        <li><a href="#show">Приложения</a></li>
                     </ul>
                 </nav>
                 <div>
@@ -114,7 +114,7 @@ export const App = ()=> {
                 ></div>
 
             </section>
-            <section className="girl">
+            <section className="girl" id="girl">
                 <div className="girl__title">
                     <div>
                         <h2>Расширяем возможности малых и крупных команд</h2>
@@ -191,48 +191,48 @@ export const App = ()=> {
                         </div>
                     </div>
 
-                    <div className="girl__cart_1">
-                        <div className="girl__cart_1__content">
-                            <div>
-                                <h3>
-                                    Разработка проектов под ключ
-                                </h3>
-                            </div>
-                            <div className="girl__cart_1__content_text">
-                                Разработка дополненной реальности для ваших
-                                продуктов под ключ, что включает в себя: создание
-                                объемных моделей, 3D-просмотр для компьютеров,
-                                3D и AR просмотр для мобильных устройств в
-                                браузере
-                            </div>
-                            <div>
-                                <ButtonWhite name="Узнать больше"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="girl__cart_2">
-                        <div className="girl__cart_2__content">
-                            <div>
-                                <h3>
-                                    Разработка проектов под ключ
-                                </h3>
+                    {/*<div className="girl__cart_1">*/}
+                    {/*    <div className="girl__cart_1__content">*/}
+                    {/*        <div>*/}
+                    {/*            <h3>*/}
+                    {/*                Разработка проектов под ключ*/}
+                    {/*            </h3>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="girl__cart_1__content_text">*/}
+                    {/*            Разработка дополненной реальности для ваших*/}
+                    {/*            продуктов под ключ, что включает в себя: создание*/}
+                    {/*            объемных моделей, 3D-просмотр для компьютеров,*/}
+                    {/*            3D и AR просмотр для мобильных устройств в*/}
+                    {/*            браузере*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <ButtonWhite name="Узнать больше"/>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    {/*<div className="girl__cart_2">*/}
+                    {/*    <div className="girl__cart_2__content">*/}
+                    {/*        <div>*/}
+                    {/*            <h3>*/}
+                    {/*                Разработка проектов под ключ*/}
+                    {/*            </h3>*/}
 
-                            </div>
-                            <div className="girl__cart_1__content_text">
-                                Разработка дополненной реальности для ваших
-                                продуктов под ключ, что включает в себя: создание
-                                объемных моделей, 3D-просмотр для компьютеров,
-                                3D и AR просмотр для мобильных устройств в
-                                браузере
-                            </div>
-                            <div>
-                                <ButtonWhite name="Узнать больше"/>
-                            </div>
-                        </div>
-                    </div>
+                    {/*        </div>*/}
+                    {/*        <div className="girl__cart_1__content_text">*/}
+                    {/*            Разработка дополненной реальности для ваших*/}
+                    {/*            продуктов под ключ, что включает в себя: создание*/}
+                    {/*            объемных моделей, 3D-просмотр для компьютеров,*/}
+                    {/*            3D и AR просмотр для мобильных устройств в*/}
+                    {/*            браузере*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <ButtonWhite name="Узнать больше"/>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </section>
-            <section className="for_whom">
+            <section className="for_whom" id="for_whom">
                 <div className="for_whom__title">
                     <h2>Для кого</h2>
                 </div>
@@ -251,7 +251,7 @@ export const App = ()=> {
                 </div>
 
             </section>
-            <section className="show">
+            <section className="show" id="show">
                 <div className="show__title">
                     <h2>
                         Хотите увидеть примеры нашей дополненной реальности?
