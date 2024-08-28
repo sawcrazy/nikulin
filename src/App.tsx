@@ -64,11 +64,11 @@ export const App = ()=> {
                 <a className="header__logo"><img src={Logo} alt="Logo"/></a>
                 <nav className="header__menu">
                     <ul>
-                        <li><a href="">О сервисе</a><div className="dot"></div></li>
-                        <li><a href="#girl">Возможности</a></li>
-                        <li><a href="#price">Тарифы</a></li>
-                        <li><a href="#for_whom">О нас</a></li>
-                        <li><a href="#show">Приложения</a></li>
+                        <li className="dot"><a href="">О сервисе</a></li>
+                        <li className="dot"><a href="#girl">Возможности</a></li>
+                        <li className="dot"><a href="#price">Тарифы</a></li>
+                        <li className="dot"><a href="#for_whom">О нас</a></li>
+                        <li className="dot"><a href="#show">Приложения</a></li>
                     </ul>
                 </nav>
                 <div>
